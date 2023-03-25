@@ -1,0 +1,4 @@
+import pandas as pd
+
+# Start writing code
+db_employee[db_employee['department_id'] == 4]['salary'].max()-db_employee[db_employee['department_id'] == 1]['salary'].max()
