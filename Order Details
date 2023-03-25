@@ -1,0 +1,9 @@
+# Find order details made by Jill and Eva.
+# Consider the Jill and Eva as first names of customers.
+# Output the order date, details and cost along with the first name.
+# Order records based on the customer id in ascending order.
+
+import pandas as pd
+
+df=customers.merge(orders,left_on="id",right_on="cust_id")
+df[(df["first_name"]=="Jill" )|( df["first_name"]=="Eva")][["first_name","order_details","order_date","total_order_cost"]]
